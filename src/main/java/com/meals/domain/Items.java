@@ -6,8 +6,15 @@ public class Items {
 	private String name;
 	private String typeOfItem;
 	private float price;
+	private int mealId;
 	
 	
+	public int getMealId() {
+		return mealId;
+	}
+	public void setMealId(int mealId) {
+		this.mealId = mealId;
+	}
 	public int getId() {
 		return id;
 	}
