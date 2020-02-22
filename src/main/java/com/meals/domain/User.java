@@ -1,5 +1,6 @@
 package com.meals.domain;
 
+
 public class User {
 	
 	public int id;
@@ -8,7 +9,13 @@ public class User {
 	private int phone;
 	private String emailId;
 	
-	
+	protected User(int id, String name, String address,int phone,String emailId) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.phone = phone;
+        this.emailId = emailId;
+    }
 	
 	public int getId() {
 		return id;
