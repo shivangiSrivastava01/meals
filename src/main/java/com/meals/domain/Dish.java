@@ -7,13 +7,10 @@ import lombok.Data;
 
 @Data
 @Entity
-public class User {
+public class Dish {
 	@Id
-	private String userId;
+	private String dishId;
 	private String name;
-	private String address;
-	private String phone;
-	private String email;
-	private String role;
-
+	private FoodCategory foodCategory;
+	private float price;
 }

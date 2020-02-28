@@ -2,16 +2,18 @@ package com.meals.service;
 
 import java.util.List;
 
-import com.meals.domain.User;
+import com.meals.domain.Meal;
 
 public interface MealService {
 
-	public String addUser(User u);
+	public Meal getMeal(String id);
 
-	public String deleteUser(User user);
+	public List<Meal> getAllMeals();
 
-	public List<String> getAllUsers();
+	public boolean addMeal(Meal meal);
 
-	public String modifyUser(User user);
+	public boolean editMeal(Meal meal);
+
+	public boolean deleteMeals(List<String> mealIdList);
 
 }
